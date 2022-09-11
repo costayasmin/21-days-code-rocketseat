@@ -1,0 +1,86 @@
+:root {
+    /* Gerais */
+    --transition-time: 1.5s;
+    --font-size-icon: 30px;
+
+    /* Tema Light */
+    --background-color-light: white;
+    
+    /* Tema Dark */
+    --background-color-dark: darkslateblue;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    background-color: white;  
+    transition: background-color var(--transition-time);
+}
+
+button, input[type="submit"], input[type="reset"] {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    color: inherit;
+    font: inherit;
+    outline: none;
+    color: white;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-decoration: none;
+    background: transparent;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0 10px;
+    margin: 40px;
+    
+    height: 50px;
+    width: 100px;
+    
+    border-radius: 50px;
+    background-color: var(--background-color-dark);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.534);
+    transition: box-shadow var(--transition-time);
+}
+
+.button:active {
+    box-shadow: none;
+}
+
+.body-dark-mode {
+    background-color: var(--background-color-dark);  
+    transition: background-color var(--transition-time);
+}
+
+.button-dark-mode {
+    background-color: var(--background-color-light);  
+    transition: background-color var(--transition-time);
+}
+
+i.ph-sun {
+    font-size: var(--font-size-icon);
+    color: black;
+    opacity: 0;
+    visibility: hidden;
+}
+
+i.ph-moon {
+    font-size: var(--font-size-icon);
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+}
+
+i.active {
+    opacity: 1;
+    visibility: visible;
+}
