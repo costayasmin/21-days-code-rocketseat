@@ -19,6 +19,10 @@ button, input[type="submit"], input[type="reset"] {
     background: transparent;
 }
 
+ul li {
+    list-style: none;
+}
+
 /*  */
 
 /* Rectangle 1 */
